@@ -5,8 +5,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
+
   declarations: [
     AppComponent,
     HeroesComponent,
@@ -14,8 +20,10 @@ import { MessagesComponent } from './messages/messages.component';
     MessagesComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     // no need to place any providers due to the `providedIn` flag...
